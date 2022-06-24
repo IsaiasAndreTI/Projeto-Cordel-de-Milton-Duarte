@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Rock+3D&family=Shizuru&family=Sriracha&display=swap');
+
+/* root são as variáveis */
+:root{
+    --font1: Verdana. Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3:'Sriracha', cursive;
+}
+
+
+
+
+/* conf gerais*/
+*{
+    margin: 0px;
+    padding: 0px;  
+    font-size: 1em;  
+
+}
+
+/*conf html e body juntas  detalhe a vew port vh altura   vaso vw largura pode ser substituiada por 100%*/
+
+html, body {
+
+    min-height:100vh;
+    background-color: darkgray;
+    font-family:var(--font1) ;
+
+}
+header{
+    background-color: black;
+    color: white;
+    text-align:center;
+}
+/*size tamanho da font*/
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size:10vw;
+
+}
+
+header > p {
+    padding-bottom: 50px;
+
+
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover, footer a:hover{
+    text-decoration: underline;
+
+}
+ /*section geral   o line-height 2em são as distancias entre as letras o left afasta a letra da margem esquerda*/
+section{
+
+    padding-top: 10vh;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family:var(--font3);
+    font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+
+}
+
+section.imagem{
+    background-color:rgb(50, 48, 48) ;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.742);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px #000000;
+
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    
+  
+
+}
+
+
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+
+
+}
